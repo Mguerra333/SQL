@@ -1,0 +1,17 @@
+/** Ice cream shoppe:
+Vanilla
+Chocolate
+Strawberry
+Rum 
+**/
+
+CREATE table shoppe(Id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, sold INTEGER);
+
+insert INTO shoppe VALUES (1, "Vanilla", 10, 20, 8);
+insert INTO shoppe VALUES (2, "chocolate", 10, 5, 5);
+insert INTO shoppe VALUES (3, "strawberry", 12, 12, 10);
+insert INTO shoppe VALUES (4, "Rum", 20, 10, 15);
+
+SELECT * FROM shoppe ORDER BY price;
+
+SELECT SUM (sold) FROM shoppe;
